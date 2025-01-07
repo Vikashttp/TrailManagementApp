@@ -5,9 +5,9 @@ def get_db_connection():
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
         'SERVER=dist-6-505.uopnet.plymouth.ac.uk;'
-        'DATABASE=COMP2001_VSureshkumar;'  # Replace with your actual database name
-        'UID=VSureshkumar;'  # Replace with your username
-        'PWD=FglB399+'  # Replace with your password
+        'DATABASE=COMP2001_VSureshkumar;'  
+        'UID=VSureshkumar;'  
+        'PWD=FglB399+'  
     )
     return conn
 
