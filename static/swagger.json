@@ -1,0 +1,35 @@
+
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Trail Management API",
+    "description": "API documentation for the Trail Management application",
+    "version": "1.0.0"
+  },
+  "host": "127.0.0.1:5000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/trails": {
+      "get": {
+        "summary": "Get all trails",
+        "responses": {
+          "200": {
+            "description": "A list of trails",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "TrailID": {"type": "integer"},
+                  "TrailName": {"type": "string"},
+                  "Description": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
